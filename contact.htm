@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Paradise | Contact</title>
+    <link rel="stylesheet" href="/pages/css/styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <button class="back-top" id="backTop">↑</button>
+    <header class="topbar">
+      <nav class="nav-shell">
+        <a class="brand" href="index.html">🐾 Pet Paradise</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="adoption.html">Adoption</a>
+          <a href="pet_details.html">Details</a>
+          <a href="contact.htm" class="active">Contact</a>
+          <button class="theme-btn" id="themeBtn">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell contact-page">
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Contact the shelter</h2>
+          <span class="pill">Fast responses</span>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <input id="nameInput" placeholder="Your name" required />
+          <input id="emailInput" placeholder="Email" required />
+          <textarea id="messageInput" rows="5" placeholder="Tell us about your ideal pet" required></textarea>
+          <button class="btn primary">Send message</button>
+        </form>
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Live clock & greeting</h2>
+          <span class="pill">Real-time</span>
+        </div>
+        <div class="clock-box">
+          <h3 id="contactGreeting">Hello</h3>
+          <p id="contactClock">00:00</p>
+        </div>
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Journey progress</h2>
+          <span class="pill">Step tracker</span>
+        </div>
+        <div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+        <div class="step-list">
+          <div class="step-item">1. Share your preferences</div>
+          <div class="step-item">2. Meet the pet</div>
+          <div class="step-item">3. Finalize adoption</div>
+        </div>
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Care support bot</h2>
+          <span class="pill">Quick help</span>
+        </div>
+        <div class="chat-box">
+          <div id="supportMessages"></div>
+          <div class="chat-input-row">
+            <input id="supportInput" placeholder="Ask for guidance" />
+            <button class="btn primary" id="supportSend">Send</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast-stack" id="toastStack"></div>
+    <script src="/pages/jvascript/contact.js"></script>
+  </body>
+</html>

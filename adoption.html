@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Paradise | Adoption</title>
+    <link rel="stylesheet" href="/pages/css/styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <button class="back-top" id="backTop">↑</button>
+    <header class="topbar">
+      <nav class="nav-shell">
+        <a class="brand" href="index.html">🐾 Pet Paradise</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="adoption.html" class="active">Adoption</a>
+          <a href="pet_details.html">Details</a>
+          <a href="contact.htm">Contact</a>
+          <button class="theme-btn" id="themeBtn">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell adoption-page">
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Adoption Gallery</h2>
+          <span class="pill">Filter • Search • Voice</span>
+        </div>
+        <div class="controls-row">
+          <input id="adoptSearch" placeholder="Search pet by name" />
+          <select id="adoptFilter">
+            <option value="all">All</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+          </select>
+          <select id="sortSelect">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+            <option value="age">Youngest</option>
+          </select>
+          <button class="btn primary" id="voiceBtn">🎤 Voice Search</button>
+          <button class="btn secondary" id="speakBtn">🔊 Speak</button>
+        </div><br /><br />
+        <div class="pet-grid" id="adoptGrid"></div>
+        <div class="load-more-row">
+          <button class="btn secondary" id="loadMoreBtn">Load More</button>
+        </div>
+      </section>
+<br />
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Compare selected pets</h2>
+          <span class="pill">Up to 2</span>
+        </div>
+        <div class="compare-box" id="compareBox"></div>
+        <button class="btn primary" id="compareBtn">Compare</button>
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Adoption form</h2>
+          <span class="pill">Multi-step</span>
+        </div>
+        <div class="stepper" id="stepper"></div>
+        <div class="form-card" id="formPanel"></div>
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Upload pet photo preview</h2>
+          <span class="pill">Drag & drop ready</span>
+        </div>
+        <input type="file" id="uploadInput" accept="image/*" />
+        <div id="dropZone" class="drop-zone">Drop image here</div>
+        <img id="previewImg" class="preview-img" alt="preview" />
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>QR preview</h2>
+          <span class="pill">Reusable profile</span>
+        </div>
+        <div class="qr-card" id="qrCard">QR</div>
+        <button class="btn secondary" id="qrBtn">Generate QR</button>
+      </section>
+    </main>
+
+    <div class="toast-stack" id="toastStack"></div>
+    <div class="modal" id="modalBox">
+      <div class="modal-card">
+        <button class="modal-close" id="closeModal">×</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+    <script src="/pages/jvascript/adoption.js"></script>
+  </body>
+</html>

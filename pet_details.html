@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Paradise | Pet Details</title>
+    <link rel="stylesheet" href="/pages/css/styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <button class="back-top" id="backTop">↑</button>
+    <header class="topbar">
+      <nav class="nav-shell">
+        <a class="brand" href="index.html">🐾 Pet Paradise</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="adoption.html">Adoption</a>
+          <a href="pet_details.html" class="active">Details</a>
+          <a href="contact.htm">Contact</a>
+          <button class="theme-btn" id="themeBtn">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell detail-page">
+      <section class="card long-section">
+        <div class="section-head">
+          <h2 id="detailTitle">Pet profile</h2>
+          <span class="pill">Detailed care info</span>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-image" id="detailImage"></div>
+          <div class="detail-info">
+            <p id="detailText"></p>
+            <div class="rating" id="ratingBox"></div>
+            <button class="btn primary" id="bookmarkBtn">🔖 Bookmark</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Care checklist</h2>
+          <span class="pill">Simple and useful</span>
+        </div>
+        <ul id="checklist"></ul>
+      </section>
+
+      <section class="card long-section">
+        <div class="section-head">
+          <h2>Timeline</h2>
+          <span class="pill">Recent notes</span>
+        </div>
+        <div id="detailTimeline"></div>
+      </section>
+    </main>
+
+    <div class="toast-stack" id="toastStack"></div>
+    <script src="/pages/jvascript/pet_details.js"></script>
+  </body>
+</html>
